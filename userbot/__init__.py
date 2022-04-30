@@ -12,8 +12,8 @@ from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "3.0.6"
 __license__ = "GNU Affero General Public License v3.0"
-__author__ = "CatUserBot <https://github.com/TgCatUB/catuserbot>"
-__copyright__ = f"CatUserBot Copyright (C) 2020 - 2021  {__author__}"
+__author__ = "TempestUserBot <https://github.com/kirito-1240/Test-1>"
+__copyright__ = f"TempestUserBot Copyright (C) 2020 - 2021  {__author__}"
 
 catub.version = __version__
 catub.tgbot.version = __version__
@@ -32,10 +32,10 @@ def close_connection(*_):
 
 signal.signal(signal.SIGTERM, close_connection)
 
-if Config.UPSTREAM_REPO == "badcat":
-    UPSTREAM_REPO_URL = "https://github.com/Jisan09/catuserbot"
+if Config.UPSTREAM_REPO == "Tempest":
+    UPSTREAM_REPO_URL = "https://github.com/kirito-1240/Test-1"
 elif Config.UPSTREAM_REPO == "goodcat":
-    UPSTREAM_REPO_URL = "https://github.com/TgCatUB/catuserbot"
+    UPSTREAM_REPO_URL = "https://github.com/kirito-1240/Test-1"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
