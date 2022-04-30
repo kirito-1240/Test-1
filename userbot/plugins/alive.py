@@ -102,7 +102,7 @@ async def amireallyalive(event):
     "A kind of showing bot details by your inline bot"
     reply_to_id = await reply_id(event)
     EMOJI = gvarstatus("ALIVE_EMOJI") or "  ➤ "
-    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**Tempestbot is Up and Running**"
+    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**✮TEMPEST BOT✮**"
     cat_caption = f"{ALIVE_TEXT}\n"
     cat_caption += f"**{EMOJI} Tempest Version :** `{catversion}`\n"
     cat_caption += f"**{EMOJI} Python Version :** `{python_version()}\n`"
