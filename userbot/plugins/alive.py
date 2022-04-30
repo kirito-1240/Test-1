@@ -44,8 +44,8 @@ async def amireallyalive(event):
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     _, check_sgnirts = check_data_base_heal_th()
-    EMOJI = gvarstatus("ALIVE_EMOJI") or "  ✥ "
-    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**✮ MY BOT IS RUNNING SUCCESSFULLY ✮**"
+    EMOJI = gvarstatus("ALIVE_EMOJI") or "  ➤ "
+    ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**✮ TEMPEST BOT IS RUNNING SUCCESSFULLY ✮**"
     CAT_IMG = gvarstatus("ALIVE_PIC")
     cat_caption = gvarstatus("ALIVE_TEMPLATE") or temp
     caption = cat_caption.format(
@@ -81,7 +81,6 @@ async def amireallyalive(event):
 
 temp = """{ALIVE_TEXT}
 **{EMOJI} Database :** `{dbhealth}`
-**{EMOJI} Telethon Version :** `{telever}`
 **{EMOJI} Tempestbot Version :** `{catver}`
 **{EMOJI} Python Version :** `{pyver}`
 **{EMOJI} Uptime :** `{uptime}`
@@ -105,7 +104,6 @@ async def amireallyalive(event):
     EMOJI = gvarstatus("ALIVE_EMOJI") or "  ✥ "
     ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**Tempestbot is Up and Running**"
     cat_caption = f"{ALIVE_TEXT}\n"
-    cat_caption += f"**{EMOJI} Telethon version :** `{version.__version__}\n`"
     cat_caption += f"**{EMOJI} Tempestbot Version :** `{catversion}`\n"
     cat_caption += f"**{EMOJI} Python Version :** `{python_version()}\n`"
     cat_caption += f"**{EMOJI} Master:** {mention}\n"
