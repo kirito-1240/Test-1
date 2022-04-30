@@ -557,10 +557,10 @@ async def inline_handler(event):  # sourcery no-metrics
     else:
         buttons = [
             (
-                Button.url("Source code", "https://github.com/TgCatUB/catuserbot"),
+                Button.url("Source code", "https://github.com/kirito-1240/Tempest-1"),
                 Button.url(
                     "Deploy",
-                    "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FMr-confused%2Fcatpack&template=https%3A%2F%2Fgithub.com%2FMr-confused%2Fcatpack",
+                    "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FKirito-1240%2FTempest-1&template=https%3A%2F%2Fgithub.com%2Fkirito-1240%2FTempest-1",
                 ),
             )
         ]
@@ -574,9 +574,9 @@ async def inline_handler(event):  # sourcery no-metrics
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="𝘾𝙖𝙩𝙐𝙨𝙚𝙧𝙗𝙤𝙩",
+            title="TempestUB",
             description="Deploy yourself",
-            url="https://github.com/TgCatUB/catuserbot",
+            url="https://github.com/kirito-1240/Tempest-1",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
