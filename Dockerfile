@@ -1,7 +1,7 @@
-FROM sandy1709/catuserbot:slim-buster
+FROM kirito-1240/Test-1:slim-buster
 
 #clonning repo 
-RUN git clone https://github.com/sandy1709/catuserbot.git /root/userbot
+RUN git clone https://github.com/kirito-1240/Test-1.git /root/userbot
 #working directory 
 WORKDIR /root/userbot
 
