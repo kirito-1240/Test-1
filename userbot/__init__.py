@@ -21,7 +21,7 @@ LOGS = logging.getLogger("CatUserbot")
 bot = catub
 
 StartTime = time.time()
-catversion = "3.0.6"
+catversion = "0.0.2"
 
 
 def close_connection(*_):
