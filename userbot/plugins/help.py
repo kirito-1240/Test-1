@@ -97,7 +97,7 @@ async def plugininfo(input_str, event, flag):
 
 
 async def grpinfo():
-    outstr = "**Plugins in Catuserbot are:**\n\n"
+    outstr = "**Plugins in Tempestbot are:**\n\n"
     outstr += f"**👩‍💻 Usage : ** `{cmdprefix}help <plugin name>`\n\n"
     category = ["admin", "bot", "fun", "misc", "tools", "utils", "extra"]
     for cat in category:
@@ -110,7 +110,7 @@ async def grpinfo():
 
 
 async def cmdlist():
-    outstr = "**Total list of Commands in your Catuserbot are :**\n\n"
+    outstr = "**Total list of Commands in your Tempest Bot are :**\n\n"
     category = ["admin", "bot", "fun", "misc", "tools", "utils", "extra"]
     for cat in category:
         plugins = GRP_INFO[cat]
@@ -196,7 +196,7 @@ async def _(event):
             outstr += f"  - `{cmdprefix}{cmd}`\n"
         outstr += f"**👩‍💻 Usage : ** `{cmdprefix}help -c <command name>`"
     await edit_or_reply(
-        event, outstr, aslink=True, linktext="Total Commands of Catuserbot are :"
+        event, outstr, aslink=True, linktext="Total Commands of Tempestbot are :"
     )
 
 
@@ -217,7 +217,7 @@ async def _(event):
         out = f"**I found {len(found)} command(s) for: **`{cmd}`\n\n{out_str}"
         out += f"\n\n__For more info check {cmdprefix}help -c <command>__"
     else:
-        out = f"I can't find any such command `{cmd}` in CatUserbot"
+        out = f"I can't find any such command `{cmd}` in Tempestbot"
     await edit_or_reply(event, out)
 
 
