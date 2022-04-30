@@ -255,7 +255,7 @@ async def upstream(event):
     # Special case for deploy
     if changelog == "" and not force_update:
         await event.edit(
-            "\n`CATUSERBOT is`  **up-to-date**  `with`  "
+            "\n`TEMPESTUSERBOT is`  **up-to-date**  `with`  "
             f"**{UPSTREAM_REPO_BRANCH}**\n"
         )
         return repo.__del__()
@@ -263,7 +263,7 @@ async def upstream(event):
         await print_changelogs(event, ac_br, changelog)
         await event.delete()
         return await event.respond(
-            f"do `{cmdhd}update deploy` to update the catuserbot"
+            f"do `{cmdhd}update deploy` to update the TempestUserbot"
         )
 
     if force_update:
@@ -280,8 +280,8 @@ async def upstream(event):
     pattern="update deploy$",
 )
 async def upstream(event):
-    event = await edit_or_reply(event, "`Pulling the nekopack repo wait a sec ....`")
-    off_repo = "https://github.com/TgCatUB/nekopack"
+    event = await edit_or_reply(event, "`Pulling the Tempest repo wait a sec ....`")
+    off_repo = "https://github.com/kirito-1240/Tempest-1"
     os.chdir("/app")
     try:
         txt = (
@@ -316,14 +316,14 @@ async def upstream(event):
 
 @catub.cat_cmd(
     pattern="badcat$",
-    command=("badcat", plugin_category),
+    command=("badt", plugin_category),
     info={
-        "header": "To update to badcat( for extra masala and gali).",
-        "usage": "{tr}badcat",
+        "header": "To update to badt( for extra masala and gali).",
+        "usage": "{tr}badt",
     },
 )
 async def variable(var):
-    "To update to badcat( for extra masala and gali)."
+    "To update to badt( for extra masala and gali)."
     if Config.HEROKU_API_KEY is None:
         return await edit_delete(
             var,
@@ -337,5 +337,5 @@ async def variable(var):
             "Set the required var in heroku to function this normally `HEROKU_APP_NAME`.",
         )
     heroku_var = app.config()
-    await edit_or_reply(var, "`Changing goodcat to badcat wait for 2-3 minutes.`")
-    heroku_var["UPSTREAM_REPO"] = "https://github.com/Jisan09/catuserbot"
+    await edit_or_reply(var, "`Changing Tempest to Tempest wait for 2-3 minutes.`")
+    heroku_var["UPSTREAM_REPO"] = "https://github.com/kirito-1240/Test-1"
