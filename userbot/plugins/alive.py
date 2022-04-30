@@ -81,7 +81,7 @@ async def amireallyalive(event):
 
 temp = """{ALIVE_TEXT}
 **{EMOJI} Database :** `{dbhealth}`
-**{EMOJI} Tempestbot Version :** `{catver}`
+**{EMOJI} Tempest Version :** `{catver}`
 **{EMOJI} Python Version :** `{pyver}`
 **{EMOJI} Uptime :** `{uptime}`
 **{EMOJI} Master:** {mention}"""
@@ -104,7 +104,7 @@ async def amireallyalive(event):
     EMOJI = gvarstatus("ALIVE_EMOJI") or "  ✥ "
     ALIVE_TEXT = gvarstatus("ALIVE_TEXT") or "**Tempestbot is Up and Running**"
     cat_caption = f"{ALIVE_TEXT}\n"
-    cat_caption += f"**{EMOJI} Tempestbot Version :** `{catversion}`\n"
+    cat_caption += f"**{EMOJI} Tempest Version :** `{catversion}`\n"
     cat_caption += f"**{EMOJI} Python Version :** `{python_version()}\n`"
     cat_caption += f"**{EMOJI} Master:** {mention}\n"
     results = await event.client.inline_query(Config.TG_BOT_USERNAME, cat_caption)
