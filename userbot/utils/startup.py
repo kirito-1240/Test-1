@@ -61,7 +61,7 @@ async def startupmessage():
         if BOTLOG:
             Config.CATUBLOGO = await catub.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/4e3ba8e8f7e535d5a2abe.jpg",
+                "https://telegra.ph/file/62fbcd515dedbb75d7bfb.jpg",
                 caption="**Your TempestUserbot has been started successfully.**",
                 buttons=[(Button.url("Support", "https://t.me/TempestUBSupport"),)],
             )
