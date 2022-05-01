@@ -5,8 +5,8 @@ import time
 import heroku3
 
 from .Config import Config
-from .core.logger import catub
-from .core.session import TempestUB
+from .core.logger import logging
+from .core.session import catub
 from .helpers.utils.utils import runasync
 from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
