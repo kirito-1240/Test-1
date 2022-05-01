@@ -16,7 +16,7 @@ else:
     session = "Tempest Userbot"
 
 try:
-    catub = CatUserBotClient(
+    TempestUB  = CatUserBotClient(
         session=session,
         api_id=Config.APP_ID,
         api_hash=Config.API_HASH,
