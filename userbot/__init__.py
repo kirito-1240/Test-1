@@ -6,7 +6,7 @@ import heroku3
 
 from .Config import Config
 from .core.logger import logging
-from .core.session import catub
+from .core.session import TempestUB
 from .helpers.utils.utils import runasync
 from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
@@ -18,7 +18,7 @@ __copyright__ = f"TempestUserBot Copyright (C) 2020 - 2021  {__author__}"
 catub.version = __version__
 catub.tgbot.version = __version__
 LOGS = logging.getLogger("TempestUB")
-bot = catub
+bot = TempestUB
 
 StartTime = time.time()
 catversion = "0.0.2"
