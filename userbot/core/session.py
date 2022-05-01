@@ -16,7 +16,7 @@ else:
     session = "Tempest Userbot"
 
 try:
-    TempestUB  = CatUserBotClient(
+    catub  = CatUserBotClient(
         session=session,
         api_id=Config.APP_ID,
         api_hash=Config.API_HASH,
@@ -31,7 +31,7 @@ except Exception as e:
     sys.exit()
 
 
-TempestUB.tgbot = tgbot = CatUserBotClient(
+catub.tgbot = tgbot = CatUserBotClient(
     session="Tempestbot",
     api_id=Config.APP_ID,
     api_hash=Config.API_HASH,
