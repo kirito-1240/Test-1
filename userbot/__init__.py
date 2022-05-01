@@ -18,7 +18,7 @@ __copyright__ = f"TempestUserBot Copyright (C) 2020 - 2021  {__author__}"
 catub.version = __version__
 catub.tgbot.version = __version__
 LOGS = logging.getLogger("TempestUB")
-bot = TempestUB
+bot = catub
 
 StartTime = time.time()
 catversion = "0.0.2"
