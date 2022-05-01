@@ -20,7 +20,7 @@ from ..sql_helper.globals import addgvar, gvarstatus
 from .pluginmanager import load_module
 from .tools import create_supergroup
 
-LOGS = logging.getLogger("CatUserbot")
+LOGS = logging.getLogger("TempestUB")
 cmdhr = Config.COMMAND_HAND_LER
 
 
